@@ -1,3 +1,8 @@
+''' 
+Filipe Grahl RM 86663
+Victor Dias Gonçalvez RM (Colocar RM)
+'''
+
 import socket
 import sys
 import pyfiglet
@@ -95,7 +100,7 @@ if __name__ == '__main__':
 
     target = input("\n[+] Forneça o alvo que você quer escanear > ")
     target = ip_alvo(target)
-    print('''\n [+] São implementados 3 modus operandi para essa ferramenta: 
+    print('''\n [+] São implementados 5 modus operandi para essa ferramenta: 
     \n [+] 1 - Faz o escaneamento de portas de sistema [1-1024] 
     \n [+] 2 - Faz o escaneamento de portas registradas [1025 - 49152]
     \n [+] 3 - Faz o escaneamento de portas 49153 a 65535
