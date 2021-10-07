@@ -1,7 +1,7 @@
 # MyPortScanner
 
 ## About
-**MyFirstPortScanner** é um script de escaneamento de porta feito para varrer as portas lógicas de um dispositivo de rede utilizando requisições TCP e se aproveitando do Triple-Handshake. 
+**MyFirstPortScanner** é um script escrito em Python de escaneamento de porta feito para varrer as portas lógicas de um dispositivo de rede utilizando requisições TCP e se aproveitando do Triple-Handshake. 
 
 Um de seus diferenciais é a utilização de Threads para agiliar o processo de varredura.
 
