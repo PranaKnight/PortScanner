@@ -10,6 +10,8 @@ from datetime import date, datetime
 from queue import Queue
 import threading
 
+#Cria os Banners
+
 banner = pyfiglet.figlet_format("Bem vindo ao MyPortScanner")
 print(banner)
 
@@ -21,6 +23,7 @@ open_port = []
 
 q = Queue()
 
+#Função para receber input tanto de um endereço IP quanto de um nome de domínio
 def ip_alvo(nome):
     
     try:
@@ -33,6 +36,8 @@ def ip_alvo(nome):
 
     return target
 
+#Escaneamento propriamente
+
 def scan(port):
     
     try:
@@ -44,11 +49,13 @@ def scan(port):
     except:
         return False
 
+#Modos de operação e Range de portas
+    
 def op_mode(mode):
     
     if mode == "1":
         for port in range (1, 1024):
-            q.put(port)
+            q.put(port) #faz o recolhimento das portas
         
     elif mode == "2":
         for port in range (1025, 49152):
@@ -69,7 +76,7 @@ def op_mode(mode):
         for port in ports:
             q.put(port)
 
-
+#Usando Threads para agilizar o processo de escaneamento.
 def threads_builder():
     while not q.empty():
         port = q.get()
@@ -77,6 +84,7 @@ def threads_builder():
             print("\n [+] Port {0} is open, baby!! Service: {1}".format(port, socket.getservbyport(port)))
             open_port.append(port)
 
+#Faz a construção das threads e a junção de todas novamente ao fim
 def scan_threads(threads, mode):
    
     op_mode(mode)
@@ -95,9 +103,10 @@ def scan_threads(threads, mode):
     
     print("\n[+] Open ports summary:", open_port)
 
-
+# Inicializando utilizando o próprio nome do prgrama
 if __name__ == '__main__':
 
+    #inputs necessários para o funcionamento
     target = input("\n[+] Forneça o alvo que você quer escanear > ")
     target = ip_alvo(target)
     print('''\n [+] São implementados 5 modus operandi para essa ferramenta: 
@@ -120,7 +129,7 @@ if __name__ == '__main__':
         t0 = datetime.now()
         scan_threads(100, mode)
         t1 = datetime.now()
-        dt = t1 - t0 
+        dt = t1 - t0  #Faz o cálculo de tempo de execução do escaneamento
         
         print("YY"*50)
         print(banner3)
