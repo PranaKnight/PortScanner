@@ -68,6 +68,8 @@ As entradas que devem ser fornecidas para o script devem estar no formato de nom
 
 ![Host](/Image_Port/Host.PNG)
 
+O output também fornece um arquivo log.txt para guardar a saida
+
 ## Video de Execução
 
 ## Considerações Finais
