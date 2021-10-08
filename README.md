@@ -17,7 +17,15 @@ Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecim
 
 ## Considerações sobre Input
 
-
+As entradas que devem ser fornecidas para o script devem estar no formato de nome ou IP da seguinte forma:
+  
+  Para Nomes de Host:
+    
+    Deve-se colocá-lo sem o 'www' e 'http(s)'. Exemplo: scanme.nmap.org
+  
+  Para IPs:
+    
+    Deve-se dar como entrada um input no formato de IPv4, separando os octetos por pontos. Exemplo: 127.0.0.1 
 
 ## Modos de Operação
 
