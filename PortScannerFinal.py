@@ -78,6 +78,8 @@ def threads_builder():
                 print("\n [+] Port {0} is open, baby!! Service: {1}".format(port, socket.getservbyport(port)))
                 open_port.append(port)
             except:
+                print("\n [+] Port {0} is open, baby!! Service: Unknown".format(port))
+                open_port.append(port)
                 continue
 #Fazendo os diferentes threads para executarem as funções de escaneamento
 def scan_threads(threads, mode):
