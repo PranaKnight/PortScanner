@@ -1,3 +1,14 @@
+"""
+FIAP
+Defesa Cibernética - 1TDCF - 2021
+Development e Coding for Security
+Prof. MS. Fábio H. Cabrini
+Atividade: Checkpoint NMAP em python
+Alunos:
+Filipe Grahl - RM 86663
+Victor Dias Gonçavez - RM 88582
+"""
+
 import socket
 import sys
 import pyfiglet
