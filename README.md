@@ -17,9 +17,13 @@ Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecim
 
 ## Considerações sobre Input
 
+
+
 ## Modos de Operação
 
 ## Exemplo de Output
+
+![Host](/Image_Port/Host.PNG)
 
 ## Video de Execução
 
