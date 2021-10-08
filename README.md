@@ -21,6 +21,8 @@ Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecim
 
 ## Modos de Operação
 
+![Mode](/Image_Port/Mode.PNG)
+
 ## Exemplo de Output
 
 ![Host](/Image_Port/Host.PNG)
