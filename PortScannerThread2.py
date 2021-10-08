@@ -131,6 +131,9 @@ if __name__ == '__main__':
         t1 = datetime.now()
         dt = t1 - t0  #Faz o cálculo de tempo de execução do escaneamento
         
+        with open("log.txt", 'a') as txt_file:
+            print(("Portas abertas: "), open_port, datetime.now(), file=txt_file)
+        
         print("YY"*50)
         print(banner3)
         print("\n [+] Escaneamento durou {} ".format(dt))
