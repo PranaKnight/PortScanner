@@ -13,6 +13,8 @@ Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecim
 
 ## Pré-requisitos e Instalação
 
+![Pré-req](/Image_Port/Imports.PNG)
+
 ## Considerações sobre Input
 
 ## Modos de Operação
