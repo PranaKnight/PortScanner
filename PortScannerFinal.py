@@ -5,6 +5,7 @@ from datetime import date, datetime
 from queue import Queue
 import threading
 
+#Cria Banners
 banner = pyfiglet.figlet_format("Bem vindo ao MyPortScanner")
 print(banner)
 
@@ -12,10 +13,12 @@ banner2 = pyfiglet.figlet_format("Scanning....")
 
 banner3 = pyfiglet.figlet_format("Finished!!")
 
+#Variáveis Globais
 open_port = []
 
 q = Queue()
 
+#Faz a resolução de nomes e testa pra ver se o host existe, está ativo.
 def ip_alvo(nome):
     
     try:
@@ -28,6 +31,7 @@ def ip_alvo(nome):
 
     return target
 
+#Faz a varredura das portas
 def scan(port):
     
     try:
@@ -39,6 +43,7 @@ def scan(port):
     except:
         return False
 
+#Faz a execução dos diferentes modos e guarda as portas dentro da função Queue() para o thread usar
 def op_mode(mode):
     
     if mode == "1":
@@ -64,7 +69,7 @@ def op_mode(mode):
         for port in ports:
             q.put(port)
 
-
+#Constroi os threads. O except é necessário para que não sejam dados erros caso uma das portas tenha serviços desconhecidos rodando por trás delas
 def threads_builder():
     while not q.empty():
         port = q.get()
@@ -74,7 +79,7 @@ def threads_builder():
                 open_port.append(port)
             except:
                 continue
-
+#Fazendo os diferentes threads para executarem as funções de escaneamento
 def scan_threads(threads, mode):
    
     op_mode(mode)
@@ -95,7 +100,7 @@ def scan_threads(threads, mode):
 
 
 
-
+#Main do programa
 if __name__ == '__main__':
 
     try:
@@ -118,10 +123,14 @@ if __name__ == '__main__':
         print(banner2)
         print("YY"*50)
         
+        #Carimbo de tempo e hora
+        
         t0 = datetime.now()
         scan_threads(100, mode)
         t1 = datetime.now()
         dt = t1 - t0 
+        
+        #Criação de um arquivo de log da execução com o timestamp
         
         with open("log.txt", 'a') as txt_file:
             print(("Portas abertas: "), open_port, datetime.now(), file=txt_file)
@@ -130,7 +139,9 @@ if __name__ == '__main__':
         print(banner3)
         print("\n [+] Escaneamento durou {} ".format(dt))
         print("YY"*50)
-    
+        
+        #Interrompe a execução quando existe um input do teclado para tal
+        
     except KeyboardInterrupt:
         print("\n [+] Um bom dia! Volte Sempre!!!!")
         sys.exit()
