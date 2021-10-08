@@ -135,7 +135,7 @@ if __name__ == '__main__':
         #Criação de um arquivo de log da execução com o timestamp
         
         with open("log.txt", 'a') as txt_file:
-            print(("Portas abertas: "), open_port, datetime.now(), file=txt_file)
+            print(("Portas abertas: "), target, open_port, datetime.now(), file=txt_file)
 
         print("YY"*50)
         print(banner3)
