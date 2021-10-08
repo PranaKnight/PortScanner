@@ -9,6 +9,8 @@ Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecim
 
 ## Preview
 
+![Prévia](/Image_Port/MyPortScannerPNG.PNG)
+
 ## Pré-requisitos e Instalação
 
 ## Considerações sobre Input
