@@ -128,6 +128,7 @@ if __name__ == '__main__':
         \n [+] 5 - Faz o esacaneamento de uma porta específica''')
 
         mode = input("\n[+] Escolha seu modus operandi > ")
+        thr = int(input("\n [+] Quantos Threads você deseja usar? > (Uso aconselhado de 100)"))
 
 
         
@@ -140,7 +141,7 @@ if __name__ == '__main__':
         #Carimbo de tempo e hora
         
         t0 = datetime.now()
-        scan_threads(100, mode)
+        scan_threads(thr, mode)
         t1 = datetime.now()
         dt = t1 - t0 
         
