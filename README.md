@@ -5,7 +5,7 @@
 
 Um de seus diferenciais é a utilização de Threads para agiliar o processo de varredura.
 
-Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecimento do Sistema Operacional que está rodando no dispositivo escaneado.
+Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecimento do Sistema Operacional que está rodando no dispositivo escaneado. A pasta UDP contém o código com requisições UDP que está sendo testado. Apesar dele funcionar de forma razoável ele não faz a resolução adequada de portas mostrando algumas vezes mais portas que o necessário.
 
 ## Preview
 
