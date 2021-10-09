@@ -80,7 +80,9 @@ O output também fornece um arquivo log.txt para guardar a saida
 [![PortScanner](/Image_Port/MyPortScanner.PNG)](https://youtu.be/IJwj1S6o-gM "PortScanner")
 
 
-## Considerações Finais
+## Forma de Execução
+
+```python3 PortScannerFinal.py```
 
 ## Referências
 
