@@ -79,6 +79,7 @@ O output também fornece um arquivo log.txt para guardar a saida
 
 [![PortScanner](/Image_Port/PortScanner.PNG)](https://youtu.be/IJwj1S6o-gM "PortScanner")
 
+
 ## Considerações Finais
 
 ## Referências
