@@ -77,6 +77,8 @@ O output também fornece um arquivo log.txt para guardar a saida
 
 ## Video de Execução
 
+https://youtu.be/IJwj1S6o-gM
+
 ## Considerações Finais
 
 ## Referências
