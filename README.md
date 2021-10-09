@@ -63,6 +63,8 @@ As entradas que devem ser fornecidas para o script devem estar no formato de nom
     
     Deve-se dar como entrada um input no formato de IPv4, separando os octetos por pontos. Exemplo: 127.0.0.1 
 
+Outro ponto importante é, quando dar a entrada para o escaneamento de portas individuais deve-se separar as portas por um espaço. Exemplo: 20 80 443 445
+
 ## Modos de Operação
 
 ![Mode](/Image_Port/Mode.PNG)
