@@ -17,6 +17,8 @@ Futuramente pretende-se implementar o escaneamento de portas UDPs e o reconhecim
 
 Essas são as bibliotecas básicas usadas para que o script funcione de maneira apropriada. Os módulos socket, sys e threading são nativos da biblioteca do Python3 padrão. Datetime e queue são módulos que precisam ser instalados, bem como o modulo de criação de banners em ASCII pyfiglet.
  
+ Para instalação das bibliotecas pode-se utilizar o pip ou pip3. Exemplo: pip3 install pyfiglet
+ 
  ### Socket
  A biblioteca socket faz o bind nas portas que queremos escanear por meio de requisições TCP. E faz a resolução de nomes de hosts.
  
